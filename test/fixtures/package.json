@@ -1,0 +1,8 @@
+{
+  "name": "fancy plugin",
+  "version": "0.1.0",
+  "description": "a description",
+  "dependencies": {
+    "npm-dependency": "1.0"
+  }
+}
