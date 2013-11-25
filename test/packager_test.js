@@ -32,7 +32,7 @@ exports.packager = {
 
     var actual = grunt.file.readJSON('tmp/bower.json');
     var expected = grunt.file.readJSON('test/expected/bower.json');
-    test.deepEqual(actual, expected, 'should describe what the default behavior is.');
+    test.deepEqual(actual, expected, 'the correct properties are overwritten in the slaves');
 
     test.done();
   }
