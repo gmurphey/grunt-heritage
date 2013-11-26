@@ -11,25 +11,26 @@
 module.exports = function (grunt) {
 
   grunt.registerTask("packager", "Your task description goes here.", function () {
-    var master_src, master_props,
+    var parent_src, parent_props,
       _ = require("lodash"),
       options = this.options({
-        master: "package.json",
-        properties: ["name", "description", "version"]
+        parent: "package.json",
+        properties: ["name", "description", "version"],
+        children: []
       });
 
-    if (!_.isArray(options.slaves)) {
-      grunt.fail.fatal("It seems slaves weren't defined? (ex., ['bower.json', 'components.json'])");
+    if (!_.isArray(options.children) && !options.children.length) {
+      grunt.fail.fatal("It seems children weren't defined? (ex., ['bower.json', 'components.json'])");
     }
 
-    master_src = grunt.file.readJSON(options.master);
-    master_props = _.pick(master_src, options.properties);
+    parent_src = grunt.file.readJSON(options.parent);
+    parent_props = _.pick(parent_src, options.properties);
 
-    options.slaves.forEach(function (slave) {
-      var slave_src = grunt.file.readJSON(slave),
-        slave_props = _.extend({}, slave_src, master_props);
+    options.children.forEach(function (child) {
+      var child_src = grunt.file.readJSON(child),
+        child_props = _.extend({}, child_src, parent_props);
 
-      grunt.file.write(slave, JSON.stringify(slave_props, null, 2));
+      grunt.file.write(child, JSON.stringify(child_props, null, 2));
     }, this);
   });
 

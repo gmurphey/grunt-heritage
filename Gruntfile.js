@@ -40,8 +40,8 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     packager: {
       options: {
-        master: "tmp/package.json",
-        slaves: ["tmp/bower.json"]
+        parent: "tmp/package.json",
+        children: ["tmp/bower.json"]
       }
     },
 
