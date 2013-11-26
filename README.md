@@ -38,19 +38,19 @@ grunt.initConfig({
 ### Options
 
 #### options.parent
-Type: `String`
+Type: `String`  
 Default value: `'package.json'`
 
 The file to pull properties from.
 
 #### options.properties
-Type: `Array`
+Type: `Array`  
 Default value: `['name', 'description', 'version']`
 
 The property names to copy into child files.
 
 #### options.children
-Type: `Array`
+Type: `Array`  
 Default value: `[]`
 
 The files to write the parent properties to.
