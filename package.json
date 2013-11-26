@@ -1,6 +1,6 @@
 {
   "name": "grunt-heritage",
-  "description": "The best Grunt plugin ever.",
+  "description": "A Grunt task to easily and automatically share properties between JSON files.",
   "version": "0.1.0",
   "homepage": "https://github.com/gmurphey/grunt-heritage",
   "author": {
