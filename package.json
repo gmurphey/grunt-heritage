@@ -1,23 +1,23 @@
 {
-  "name": "grunt-packager",
+  "name": "grunt-heritage",
   "description": "The best Grunt plugin ever.",
   "version": "0.1.0",
-  "homepage": "https://github.com/gmurphey/grunt-packager",
+  "homepage": "https://github.com/gmurphey/grunt-heritage",
   "author": {
     "name": "Garrett Murphey",
     "email": "gmurphey@gmurphey.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gmurphey/grunt-packager.git"
+    "url": "https://github.com/gmurphey/grunt-heritage.git"
   },
   "bugs": {
-    "url": "https://github.com/gmurphey/grunt-packager/issues"
+    "url": "https://github.com/gmurphey/grunt-heritage/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/gmurphey/grunt-packager/blob/master/LICENSE-MIT"
+      "url": "https://github.com/gmurphey/grunt-heritage/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",

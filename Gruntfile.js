@@ -1,6 +1,6 @@
 /*
- * grunt-packager
- * https://github.com/gmurphey/grunt-packager
+ * grunt-heritage
+ * https://github.com/gmurphey/grunt-heritage
  *
  * Copyright (c) 2013 Garrett Murphey
  * Licensed under the MIT license.
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    packager: {
+    heritage: {
       options: {
         parent: "tmp/package.json",
         children: ["tmp/bower.json"]
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'copy', 'packager', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'copy', 'heritage', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);

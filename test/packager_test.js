@@ -22,7 +22,7 @@ var grunt = require('grunt');
     test.ifError(value)
 */
 
-exports.packager = {
+exports.heritage = {
   setUp: function(done) {
     done();
   },
