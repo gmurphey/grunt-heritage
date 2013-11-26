@@ -1,6 +1,6 @@
 /*
- * grunt-packager
- * https://github.com/gmurphey/grunt-packager
+ * grunt-heritage
+ * https://github.com/gmurphey/grunt-heritage
  *
  * Copyright (c) 2013 Garrett Murphey
  * Licensed under the MIT license.
@@ -10,7 +10,7 @@
 
 module.exports = function (grunt) {
 
-  grunt.registerTask("packager", "Your task description goes here.", function () {
+  grunt.registerTask("heritage", "Your task description goes here.", function () {
     var parent_src, parent_props,
       _ = require("lodash"),
       options = this.options({
