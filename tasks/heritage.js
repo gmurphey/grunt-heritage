@@ -10,7 +10,7 @@
 
 module.exports = function (grunt) {
 
-  grunt.registerTask("heritage", "Your task description goes here.", function () {
+  grunt.registerTask("heritage", "Easily and automatically shares properties between JSON files", function () {
     var parent_src, parent_props,
       _ = require("lodash"),
       options = this.options({
