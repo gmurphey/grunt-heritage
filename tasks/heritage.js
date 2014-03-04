@@ -10,7 +10,7 @@
 
 module.exports = function (grunt) {
 
-  grunt.registerTask("heritage", "Easily and automatically shares properties between JSON files", function () {
+  grunt.registerTask("heritage", "Easily and automatically shares property values between JSON files", function () {
     var parent_src, parent_props,
       _ = require("lodash"),
       options = this.options({
@@ -24,13 +24,16 @@ module.exports = function (grunt) {
     }
 
     parent_src = grunt.file.readJSON(options.parent);
+
     parent_props = _.pick(parent_src, options.properties);
+    grunt.log.ok("Read: " + options.parent);
 
     options.children.forEach(function (child) {
       var child_src = grunt.file.readJSON(child),
         child_props = _.extend({}, child_src, parent_props);
 
       grunt.file.write(child, JSON.stringify(child_props, null, 2));
+      grunt.log.ok("Updated: " + child);
     }, this);
   });
 
