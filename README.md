@@ -1,5 +1,7 @@
 # grunt-heritage
 
+[![Build Status](http://img.shields.io/travis/gmurphey/grunt-heritage.svg)](https://travis-ci.org/gmurphey/grunt-heritage) [![Gittip](http://img.shields.io/gittip/gmurphey.svg)](https://www.gittip.com/gmurphey/)
+
 Hate keeping version numbers and other properties up-to-date in multiple JSON package management files? Enter grunt-heritage. Automatically copy properties from a parent file (`package.json`) into child files (`bower.json`, `component.json`, etc.).
 
 ## Getting Started
