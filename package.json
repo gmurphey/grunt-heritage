@@ -1,7 +1,7 @@
 {
   "name": "grunt-heritage",
   "description": "A Grunt task to easily and automatically share property values between JSON files.",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "homepage": "https://github.com/gmurphey/grunt-heritage",
   "author": {
     "name": "Garrett Murphey",
